@@ -8,7 +8,7 @@ Word counter is a reagent/ring clojure word counting service. If you give it a U
 
 ## Running
 
-To run, you should be able to just run ```lein cljsbuild once && lein ring server-headless``` . This will pull down any necessary dependencies, build the clojurescript, and run an http server. It should run on port 3000.
+To run, you should be able to just run ```lein cljsbuild once && lein ring server-headless``` . This will pull down any necessary dependencies, build the clojurescript, and run an http server. You will probably also see a bunch of warnings, but these are unfortunately normal for clojurescript builds. It should run on port 3000.
 
 To view the app, you should be able to just hit [http://localhost:3000](http://localhost:3000).
 
