@@ -2,17 +2,24 @@
 
 Word counter is a reagent/ring clojure word counting service. If you give it a URL, it'll count the words on that page.
 
+## Dependencies
+
+* [leiningen](https://github.com/technomancy/leiningen)
+
 ## Running
-Dependencies:
-* leiningen
 
 To run, you should be able to just run ```lein cljsbuild once && lein ring server-headless``` . This will pull down any necessary dependencies, build the clojurescript, and run an http server. It should run on port 3000.
 
 To view the app, you should be able to just hit [http://localhost:3000](http://localhost:3000).
 
+## Running Tests
 You can also run the unit tests via ```lein test```
 
-## Rationale
+## Notes
+
+The app was tested with firefox and chrome, but not IE, as I do not have a windows machine. :)
+
+### Rationale
 
 A couple of notes on this implementation. 
 
